@@ -1,0 +1,310 @@
+{
+  "10": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "head",
+      "positive": "red hair, grey eyes",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "16": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "background",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "20": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "quality",
+      "positive": "score_9, score_8_up, source_anime, official artstyle, anime screencap, highly detailed, masterpiece, best quality, absurdres, hyper-detailed, amazing quality, very aesthetic, high resolution, ultra-detailed",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "3": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "majicmixRealistic_v7.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 512,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "27": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "lora_name": "GoodHands-beta2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 0.8
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "6",
+        0
+      ],
+      "seed": 329306855406966,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 1.0
+    }
+  },
+  "25": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "23",
+        0
+      ],
+      "filename_prefix": "japanese_beauty_hiresfix_1024x1536"
+    }
+  },
+  "23": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "21",
+        0
+      ],
+      "vae": [
+        "3",
+        2
+      ]
+    }
+  },
+  "21": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "20",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "19",
+        0
+      ],
+      "seed": 358183162438068,
+      "steps": 12,
+      "cfg": 6.5,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.48
+    }
+  },
+  "19": {
+    "class_type": "LatentUpscale",
+    "inputs": {
+      "samples": [
+        "17",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 1024,
+      "height": 1536,
+      "crop": "disabled"
+    }
+  },
+  "28": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "7",
+        0
+      ],
+      "seed": 443316742513352,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.2
+    }
+  },
+  "12": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "limbs",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "14": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "body",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "17": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "30",
+        0
+      ],
+      "seed": 204713183820772,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.2
+    }
+  },
+  "29": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "12",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "28",
+        0
+      ],
+      "seed": 52228647224744,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.2
+    }
+  },
+  "30": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "14",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "29",
+        0
+      ],
+      "seed": 453484850823250,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 0.2
+    }
+  },
+  "4": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "26",
+        1
+      ],
+      "name": "all",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored",
+      "negative": "low quality, worst quality"
+    }
+  },
+  "26": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "clip": [
+        "3",
+        1
+      ],
+      "lora_name": "GoodHands-beta2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 0.7
+    }
+  }
+}
