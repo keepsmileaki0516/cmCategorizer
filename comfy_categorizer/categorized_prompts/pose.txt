@@ -1,0 +1,14 @@
+on
+position
+viewer
+angle
+standing
+backview
+spectators
+view
+lying
+above
+out
+kneeling
+below
+lazypos

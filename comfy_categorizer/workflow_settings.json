@@ -1,0 +1,148 @@
+{
+  "active_workflow": "flux",
+  "workflow_types": {
+    "detailed": {
+      "workflowfile": "02_multi-node-workflow.json",
+      "output_enabled": true,
+      "nodes_by_name": {
+        "positive": {
+          "head": {
+            "assign": "head",
+            "default": "beautiful face"
+          },
+          "body": {
+            "assign": "body,head,clothing,pose",
+            "default": "standing"
+          },
+          "all": {
+            "assign": "all,nsfw",
+            "default": "1girl, solo"
+          },
+          "limbs": {
+            "assign": "limbs",
+            "default": "beautiful hands"
+          },
+          "background": {
+            "assign": "background",
+            "default": "sea side"
+          },
+          "quality": {
+            "assign": "quality",
+            "default": "none"
+          }
+        },
+        "negative": {
+          "all": {
+            "assign": "low quality, worst quality",
+            "default": "low quality, worst quality"
+          },
+          "head": {
+            "assign": true,
+            "default": "low quality, worst quality"
+          },
+          "limbs": {
+            "assign": "worst hands",
+            "default": "low quality, worst quality"
+          },
+          "body,clothing,pose": {
+            "assign": "true",
+            "default": "low quality, worst quality"
+          },
+          "background": {
+            "assign": "true",
+            "default": "low quality, worst quality"
+          },
+          "quality": {
+            "assign": "true",
+            "default": "low quality, worst quality"
+          }
+        }
+      },
+      "nodes_by_id": {
+        "14": {
+          "inputs": {
+            "text": "all"
+          }
+        }
+      }
+    },
+    "simple": {
+      "workflowfile": "01_simple-workflow.json",
+      "output_enabled": true,
+      "nodes_by_name": {
+        "positive": {
+          "all": {
+            "assign": "all",
+            "default": "1girl"
+          }
+        },
+        "negative": {
+          "all": {
+            "assign": true,
+            "default": "low quality"
+          }
+        }
+      },
+      "nodes_by_id": {
+        "3": {
+          "inputs": {
+            "purpose": "positive",
+            "assign": "all",
+            "default": "masterpiece, solo, girl, long black hair"
+          }
+        },
+        "4": {
+          "inputs": {
+            "purpose": "negative",
+            "assign": true,
+            "default": "low quality, worst quality"
+          }
+        }
+      }
+    },
+    "hiresfix": {
+      "workflowfile": "03_hires-workflow.json",
+      "output_enabled": false,
+      "nodes_by_name": {
+        "positive": {},
+        "negative": {}
+      },
+      "nodes_by_id": {
+        "6": {
+          "purpose": "positive",
+          "assign": "all,nsfw",
+          "default": "a girl, school girl, full boddy"
+        },
+        "7": {
+          "purpose": "negative",
+          "assign": true,
+          "default": "low quality, worst quality"
+        }
+      }
+    },
+    "flux": {
+      "workflowfile": "05_flux.json",
+      "output_enabled": true,
+      "nodes_by_id": {
+        "4": {
+          "inputs": {
+            "purpose": "positive",
+            "assign": "all,nsfw",
+            "default": "a girl, school girl, full boddy"
+          }
+        },
+        "5": {
+          "inputs": {
+            "purpose": "negative",
+            "assign": true,
+            "default": "low quality, worst quality"
+          }
+        }
+      },
+      "nodes_by_name": {
+        "positive": {},
+        "negative": {}
+      }
+    }
+  }
+}

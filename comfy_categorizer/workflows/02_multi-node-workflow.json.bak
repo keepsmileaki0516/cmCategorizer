@@ -1,0 +1,1987 @@
+{
+  "10": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "head",
+      "positive": "red hair, grey eyes",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 10,
+      "type": "DualPromptEncoder",
+      "pos": [
+        481.9,
+        460
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 30
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            57
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "head",
+        "red hair, grey eyes",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "16": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "background",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 16,
+      "type": "DualPromptEncoder",
+      "pos": [
+        481.9,
+        1450
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 33
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            35
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "background",
+        "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "20": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "quality",
+      "positive": "score_9, score_8_up, source_anime, official artstyle, anime screencap, highly detailed, masterpiece, best quality, absurdres, hyper-detailed, amazing quality, very aesthetic, high resolution, ultra-detailed",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 20,
+      "type": "DualPromptEncoder",
+      "pos": [
+        481.9,
+        1780
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 39
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            41
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "quality",
+        "score_9, score_8_up, source_anime, official artstyle, anime screencap, highly detailed, masterpiece, best quality, absurdres, hyper-detailed, amazing quality, very aesthetic, high resolution, ultra-detailed",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "3": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "majicmixRealistic_v7.safetensors"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 3,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -335.50321624755907,
+        126.80560812377936
+      ],
+      "size": [
+        281.9,
+        98
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ckpt名",
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "ckpt_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "モデル",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            49
+          ]
+        },
+        {
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            30,
+            31,
+            32,
+            33,
+            39,
+            51
+          ]
+        },
+        {
+          "localized_name": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            45
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CheckpointLoaderSimple",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "majicmixRealistic_v7.safetensors"
+      ]
+    }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 512,
+      "height": 768,
+      "batch_size": 1
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 6,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -334.4384528045658,
+        327.1208243713379
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "幅",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "高さ",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "バッチサイズ",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        512,
+        768,
+        1
+      ]
+    }
+  },
+  "27": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "lora_name": "GoodHands-beta2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 0.8
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 27,
+      "type": "LoraLoader",
+      "pos": [
+        -31.68664844131483,
+        790.2665644807819
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "localized_name": "クリップ",
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "lora_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "モデルの強度",
+          "name": "strength_model",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "クリップの強度",
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_clip"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "モデル",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": []
+        },
+        {
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoraLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "GoodHands-beta2.safetensors",
+        1,
+        0.8
+      ]
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "6",
+        0
+      ],
+      "seed": 329306855406966,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 7,
+      "type": "KSampler",
+      "pos": [
+        1057.6018345361704,
+        455.6156645152614
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 61
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 27
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 28
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 29
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            54
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        329306855406966,
+        "randomize",
+        20,
+        7,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "25": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "23",
+        0
+      ],
+      "filename_prefix": "japanese_beauty_hiresfix_1024x1536"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 25,
+      "type": "SaveImage",
+      "pos": [
+        3387.2242158276586,
+        136.22492649592334
+      ],
+      "size": [
+        313.47265625,
+        270
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "画像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 53
+        },
+        {
+          "localized_name": "ファイル名_プレフィックス",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "japanese_beauty_hiresfix_1024x1536"
+      ]
+    }
+  },
+  "23": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "21",
+        0
+      ],
+      "vae": [
+        "3",
+        2
+      ]
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 23,
+      "type": "VAEDecode",
+      "pos": [
+        3201.3624012412997,
+        135.324
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "サンプル",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 44
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "画像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    }
+  },
+  "21": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "20",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "19",
+        0
+      ],
+      "seed": 358183162438068,
+      "steps": 12,
+      "cfg": 6.5,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 21,
+      "type": "KSampler",
+      "pos": [
+        2906.5264975475184,
+        137.3991013477403
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 63
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 41
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 42
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 43
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        358183162438068,
+        "randomize",
+        12,
+        6.5,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "19": {
+    "class_type": "LatentUpscale",
+    "inputs": {
+      "samples": [
+        "17",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 1024,
+      "height": 1536,
+      "crop": "disabled"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 19,
+      "type": "LatentUpscale",
+      "pos": [
+        2578.79095957036,
+        137.5628388306236
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "samples",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 38
+        },
+        {
+          "localized_name": "拡大方法",
+          "name": "upscale_method",
+          "type": "COMBO",
+          "widget": {
+            "name": "upscale_method"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "幅",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "高さ",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "クロップ",
+          "name": "crop",
+          "type": "COMBO",
+          "widget": {
+            "name": "crop"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LatentUpscale",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "nearest-exact",
+        1024,
+        1536,
+        "disabled"
+      ]
+    }
+  },
+  "28": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "7",
+        0
+      ],
+      "seed": 443316742513352,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 28,
+      "type": "KSampler",
+      "pos": [
+        1403.1823055622228,
+        320.6069987410928
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 62
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 57
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 56
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 54
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            68
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        443316742513352,
+        "randomize",
+        8,
+        7,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "12": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "limbs",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 12,
+      "type": "DualPromptEncoder",
+      "pos": [
+        481.9,
+        790
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 31
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            64
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "limbs",
+        "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "14": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "3",
+        1
+      ],
+      "name": "body,clothing,pose",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 14,
+      "type": "DualPromptEncoder",
+      "pos": [
+        481.9,
+        1120
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 32
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            65
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "body,clothing,pose",
+        "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored,",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "17": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "30",
+        0
+      ],
+      "seed": 204713183820772,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 17,
+      "type": "KSampler",
+      "pos": [
+        2264.1003239385755,
+        236.80268390051455
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 60
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 35
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 36
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 70
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            38
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        204713183820772,
+        "randomize",
+        8,
+        7,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "29": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "12",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "28",
+        0
+      ],
+      "seed": 52228647224744,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 29,
+      "type": "KSampler",
+      "pos": [
+        1412.0686366921127,
+        659.386004337501
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 66
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 64
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 71
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 68
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            69
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        52228647224744,
+        "randomize",
+        8,
+        7,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "30": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "26",
+        0
+      ],
+      "positive": [
+        "14",
+        0
+      ],
+      "negative": [
+        "4",
+        1
+      ],
+      "latent_image": [
+        "29",
+        0
+      ],
+      "seed": 453484850823250,
+      "steps": 8,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 30,
+      "type": "KSampler",
+      "pos": [
+        1413.4856476116067,
+        1005.1946790992502
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 67
+        },
+        {
+          "localized_name": "ポジティブ",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 65
+        },
+        {
+          "localized_name": "ネガティブ",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 72
+        },
+        {
+          "localized_name": "潜在画像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 69
+        },
+        {
+          "localized_name": "シード",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ステップ",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "サンプラー名",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "スケジューラ",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "潜在",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            70
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        453484850823250,
+        "randomize",
+        8,
+        7,
+        "euler_ancestral",
+        "normal"
+      ]
+    }
+  },
+  "4": {
+    "class_type": "DualPromptEncoder",
+    "inputs": {
+      "clip": [
+        "26",
+        1
+      ],
+      "name": "all",
+      "positive": "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored",
+      "negative": "low quality, worst quality"
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 4,
+      "type": "DualPromptEncoder",
+      "pos": [
+        340.0685457641604,
+        132.34261970977775
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 52
+        },
+        {
+          "localized_name": "name",
+          "name": "name",
+          "type": "STRING",
+          "widget": {
+            "name": "name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            27
+          ]
+        },
+        {
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            28,
+            36,
+            42,
+            56,
+            71,
+            72
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualPromptEncoder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "all,nsfw",
+        "1boy, alex_dcg, red hair, grey eyes, score_9, score_8_up, score_7_up, source_anime, official artstyle, anime screencap, highly detailed, male focus, perfect composition, good shading, masterpiece, masterwork, best quality, absurdres, hyper-detailed, 8k uhd:1.2, amazing quality, very aesthetic, high resolution, ultra-detailed, uncensored",
+        "low quality, worst quality"
+      ]
+    }
+  },
+  "26": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "clip": [
+        "3",
+        1
+      ],
+      "lora_name": "GoodHands-beta2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 0.7
+    },
+    "_is_ui_format": true,
+    "_ui_node": {
+      "id": 26,
+      "type": "LoraLoader",
+      "pos": [
+        3.238790746307501,
+        128.06749769153637
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "モデル",
+          "name": "model",
+          "type": "MODEL",
+          "link": 49
+        },
+        {
+          "localized_name": "クリップ",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 51
+        },
+        {
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "lora_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "モデルの強度",
+          "name": "strength_model",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "クリップの強度",
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_clip"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "モデル",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            60,
+            61,
+            62,
+            63,
+            66,
+            67
+          ]
+        },
+        {
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoraLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "GoodHands-beta2.safetensors",
+        1,
+        0.7
+      ]
+    }
+  }
+}
