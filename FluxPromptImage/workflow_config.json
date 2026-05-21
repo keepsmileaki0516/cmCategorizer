@@ -1,0 +1,14 @@
+{
+  "workflow_file": "05_flux.json",
+  "positive_prompt_key": "positive_prompt",
+  "negative_prompt_key": "negative_prompt",
+  "prompt_placeholder": "__POSITIVE_PROMPT__",
+  "negative_prompt_placeholder": "__NEGATIVE_PROMPT__",
+  "output_directory": "output",
+  "max_images": 1,
+  "enable_auto_delivery": false,
+  "default_channel": null,
+  "workflow_directory": null,
+  "model_override": null,
+  "thinking": null
+}

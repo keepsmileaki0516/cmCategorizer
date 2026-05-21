@@ -1,0 +1,9 @@
+{
+  "positive_prompt": "__POSITIVE_PROMPT__",
+  "negative_prompt": "__NEGATIVE_PROMPT__",
+  "num_inference_steps": 30,
+  "guidance_scale": 7.5,
+  "width": 1024,
+  "height": 1024,
+  "batch_size": 1
+}

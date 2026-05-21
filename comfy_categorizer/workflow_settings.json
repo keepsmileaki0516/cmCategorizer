@@ -1,5 +1,5 @@
 {
-  "active_workflow": "flux",
+  "active_workflow": "detailed",
   "workflow_types": {
     "detailed": {
       "workflowfile": "02_multi-node-workflow.json",
@@ -127,7 +127,7 @@
         "4": {
           "inputs": {
             "purpose": "positive",
-            "assign": "all,nsfw",
+            "assign": "nsfw,nsfw,all",
             "default": "a girl, school girl, full boddy"
           }
         },
